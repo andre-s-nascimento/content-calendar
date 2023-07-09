@@ -1,6 +1,7 @@
 package net.snascimento.contentcalendar;
 
 import java.time.LocalDateTime;
+import net.snascimento.contentcalendar.config.ContentCalendarProperties;
 import net.snascimento.contentcalendar.model.Content;
 import net.snascimento.contentcalendar.model.Status;
 import net.snascimento.contentcalendar.model.Type;
@@ -8,9 +9,11 @@ import net.snascimento.contentcalendar.repository.ContentRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
+@EnableConfigurationProperties(ContentCalendarProperties.class)
 public class ContentCalendarApplication {
 
   public static void main(String[] args) {
