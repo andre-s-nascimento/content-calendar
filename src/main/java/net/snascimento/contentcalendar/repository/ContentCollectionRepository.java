@@ -14,7 +14,9 @@ import org.springframework.stereotype.Repository;
 public class ContentCollectionRepository {
   private final List<Content> contentList = new ArrayList<>();
 
-  public ContentCollectionRepository() {}
+  public ContentCollectionRepository() {
+    /* TODO document why this constructor is empty */
+  }
 
   public List<Content> findAll() {
     return contentList;
