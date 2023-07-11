@@ -13,7 +13,7 @@ public class HomeController {
     this.properties = properties;
   }
 
-  @GetMapping("/")
+  @GetMapping("/home")
   public ContentCalendarProperties home() {
     return properties;
   }
